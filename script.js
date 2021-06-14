@@ -3,6 +3,7 @@ const caixaDeInput = document.querySelector('#texto-tarefa');
 const listaTarefas = document.querySelector('#lista-tarefas');
 const botaoApagaTudo = document.querySelector('#apaga-tudo');
 const botaoApagaFinalizados = document.querySelector('#remover-finalizados');
+const botaoSalvarTarefas = document.querySelector('#salvar-tarefas');
 
 // Requesito 5 && 6 - evento click no botao e entrega valor de input na lista
 // texto no button
@@ -14,7 +15,6 @@ function criaItemLista() {
   caixaDeInput.value = '';
 }
 botaoCriarTarefa.addEventListener('click', criaItemLista);
-botaoCriarTarefa.innerText = 'Adicionar Tarefa';
 
 // requesito 7- alterar cor de fundo do item da lista tarefas
 // Requesito 8 - alterar apenas uma cor por vez
@@ -44,8 +44,6 @@ itemTarefasOl.addEventListener('dblclick', tarefaCompletada);
 
 // requesito 10- botao apaga tudo quando clicar apaga todos itens da lista
 // botao criado direto no html
-botaoApagaTudo.innerText = 'Limpar Lista';
-
 function LimparLista() {
   itemTarefasOl.innerText = '';
 }
@@ -53,11 +51,23 @@ botaoApagaTudo.addEventListener('click', LimparLista);
 
 // requesito 11- Botao que remove elementos finalizados da lista
 // botao criado direto  no html
-botaoApagaFinalizados.innerText = 'Limpar Completados';
-
 function LimpaFinalizados() {
   const finalizado = document.querySelector('.completed');
   finalizado.remove();
 }
 
 botaoApagaFinalizados.addEventListener('click', LimpaFinalizados);
+// 11 - Adicione um botão com id="remover-finalizados" que quando clicado remove somente os elementos finalizados da sua lista
+
+// 12 - Adicione um botão com id="salvar-tarefas" que salve o conteúdo da lista. Se você fechar e reabrir a página, a lista deve continuar no estado em que estava
+function salvaListaTarefas() {
+  // salvar conteudo
+  const itensDalista = document.querySelector('#lista-tarefas').innerHTML;
+  localStorage.setItem('lista-salva', itensDalista);
+}
+botaoSalvarTarefas.addEventListener('click', salvaListaTarefas);
+
+// chamar conteudo salvo
+window.onload = function() {
+  document.querySelector('#lista-tarefas').innerHTML = localStorage.getItem('lista-salva');
+}

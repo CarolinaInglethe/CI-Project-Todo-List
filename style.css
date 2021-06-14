@@ -12,11 +12,13 @@ button {
 }
 
 header {
-  background-color: #6b705c ;
+  background-color: #6b705c;
+  display: flex;
+  flex-direction: column;
   margin: 10px;
   margin-left: 150px;
   margin-right: 150px;
-  border-radius: 30px;
+  border-radius: 10px;
   padding: 10px;
 }
 
