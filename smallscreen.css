@@ -1,5 +1,64 @@
 body {
-  font-size: 100%;
   background: linear-gradient(68.15deg, #e0e5cd 0, #d4dcc2 16.67%, #c5d2b5 33.33%, #b4c6a6 50%, #a2ba98 66.67%, #92b08d 83.33%, #84a985 100%);
+  font-size: 100%;
+}
 
+header {
+  text-align: center;
+}
+
+#container-nova-tarefa {
+    padding-top: 50px;
+    text-align: center;
+}
+
+#container-nova-tarefa input {
+  border-radius: 4px;
+  font-size: medium;
+}
+
+#container-nova-tarefa button {
+  border-radius: 4px;
+  font-size: medium;
+}
+
+#lista-tarefas {
+    padding: 35px;
+
+}
+
+#container-buttons {
+  background-color: #66806A;
+  bottom: 0;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  left: 0;
+  padding: 20px;
+  position: fixed;
+  width: 90%;
+}
+
+#apaga-tudo {
+  background-color: #c9d4c0;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: medium;
+  padding: 4px;
+}
+
+#remover-finalizados {
+    background-color: #c9d4c0;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: medium;
+    padding: 4px;
+}
+
+#salvar-tarefas {
+    background-color: #acd48a;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: medium;
+    padding: 4px;
 }
