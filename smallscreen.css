@@ -24,7 +24,11 @@ header {
 
 #lista-tarefas {
     padding: 35px;
-
+}
+#lista-tarefas li {
+  padding: 2px;
+  font-size: medium;
+  margin: 3px;
 }
 
 #container-buttons {
