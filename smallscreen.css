@@ -28,6 +28,7 @@ header {
 }
 
 #lista-tarefas li {
+  background-color: white;
   padding: 2px;
   font-size: medium;
   margin: 3px;
