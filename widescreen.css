@@ -34,11 +34,11 @@ header {
 }
 
 #lista-tarefas {
-  padding: 60px;
-  margin: 50px 25%;
+  margin: 100px 25%;
 }
 
 #lista-tarefas li {
+  background-color:white;
   padding: 4px;
   font-size: large;
   margin: 5px;
