@@ -2,7 +2,7 @@
 
 # Boas vindas ao repositório do projeto Lista de Tarefas!
 
-
+(Tela para Desktop e mobile)
   LINK DO PROJETO : https://carolinainglethe.github.io/CI-Project-Todo-List/
 ---
 
