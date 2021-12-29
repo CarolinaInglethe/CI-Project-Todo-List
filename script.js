@@ -29,7 +29,6 @@ window.onload = function() {
   console.log(listaLis);
 
   function alteraCorItemLista(event) {
-
     for (let index = 0; index < listaLis.length; index += 1) {
       listaLis[index].style.backgroundColor = 'white';
     }
@@ -40,12 +39,11 @@ window.onload = function() {
   // requesito 9- Ao clicar 2x no item marca com risco de completado
   // e retira o risco completado
   function tarefaCompletada(event) {
-    const evento = event;
-    const itemLi = document.querySelectorAll('li');
-    for (let index = 0; index < itemLi.length; index += 1) {
-      itemLi[index].className = 'item-tarefa';
+    if (event.target.className === 'item-tarefa completed') {
+      return event.target.className = 'item-tarefa';
     }
-    evento.target.className = 'item-tarefa completed';
+    
+    event.target.className = 'item-tarefa completed';
   }
   itemTarefasOl.addEventListener('dblclick', tarefaCompletada);
 
