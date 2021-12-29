@@ -38,17 +38,18 @@ window.onload = function() {
 
   // requesito 9- Ao clicar 2x no item marca com risco de completado
   // e retira o risco completado
+
   function tarefaCompletada(event) {
     if (event.target.className === 'item-tarefa completed') {
       return event.target.className = 'item-tarefa';
     }
-    
     event.target.className = 'item-tarefa completed';
   }
   itemTarefasOl.addEventListener('dblclick', tarefaCompletada);
 
   // requesito 10- botao apaga tudo quando clicar apaga todos itens da lista
   // botao criado direto no html
+
   function LimparLista() {
     itemTarefasOl.innerText = '';
   }
@@ -56,15 +57,15 @@ window.onload = function() {
 
   // requesito 11- Botao que remove elementos finalizados da lista
   // botao criado direto  no html
+
   function LimpaFinalizados() {
     const finalizado = document.querySelector('.completed');
     finalizado.remove();
   }
-
   botaoApagaFinalizados.addEventListener('click', LimpaFinalizados);
-  // 11 - Adicione um botão com id="remover-finalizados" que quando clicado remove somente os elementos finalizados da sua lista
 
   // 12 - Adicione um botão com id="salvar-tarefas" que salve o conteúdo da lista. Se você fechar e reabrir a página, a lista deve continuar no estado em que estava
+  
   function salvaListaTarefas() {
     // salvar conteudo
     const itensDalista = document.querySelector('#lista-tarefas').innerHTML;
