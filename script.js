@@ -37,8 +37,6 @@ window.onload = function() {
   }
   itemTarefasOl.addEventListener('click', alteraCorItemLista);
 
-
-
   // requesito 9- Ao clicar 2x no item marca com risco de completado
   // e retira o risco completado
   function tarefaCompletada(event) {
