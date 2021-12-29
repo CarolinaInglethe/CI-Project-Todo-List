@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(68.15deg, #e0e5cd 0, #d4dcc2 16.67%, #c5d2b5 33.33%, #b4c6a6 50%, #a2ba98 66.67%, #92b08d 83.33%, #84a985 100%);
+  background: linear-gradient(68.15deg,#e0e5cd 0,#d4dcc2 16.67%,#c5d2b5 33.33%,#b4c6a6 50%,#a2ba98 66.67%,#92b08d 83.33%,#84a985 100%);
   font-size: 100%;
 }
 
@@ -8,8 +8,8 @@ header {
 }
 
 #container-nova-tarefa {
-    padding-top: 50px;
-    text-align: center;
+  padding-top: 50px;
+  text-align: center;
 }
 
 #container-nova-tarefa input {
@@ -23,8 +23,9 @@ header {
 }
 
 #lista-tarefas {
-    padding: 35px;
+  padding: 35px;
 }
+
 #lista-tarefas li {
   padding: 2px;
   font-size: medium;
@@ -52,17 +53,17 @@ header {
 }
 
 #remover-finalizados {
-    background-color: #c9d4c0;
-    border: 1px solid black;
-    border-radius: 5px;
-    font-size: medium;
-    padding: 4px;
+  background-color: #c9d4c0;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: medium;
+  padding: 4px;
 }
 
 #salvar-tarefas {
-    background-color: #acd48a;
-    border: 1px solid black;
-    border-radius: 5px;
-    font-size: medium;
-    padding: 4px;
+  background-color: #acd48a;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: medium;
+  padding: 4px;
 }
