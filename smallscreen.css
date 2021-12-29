@@ -8,7 +8,7 @@ header {
 }
 
 #container-nova-tarefa {
-  padding-top: 50px;
+  padding: 50px;
   text-align: center;
 }
 
@@ -66,4 +66,8 @@ header {
   border-radius: 5px;
   font-size: medium;
   padding: 4px;
+}
+
+.completed {
+  text-decoration: line-through;
 }
