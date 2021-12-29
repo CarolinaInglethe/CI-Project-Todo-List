@@ -4,27 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 700px)" href="widescreen.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 650px)" href="smallscreen.css">
     <title>Projeto to do list</title>
 </head>
 <body>
     <header>
-        <h1>Minha Lista de Tarefas</h1>
+        <h1>Lista de Tarefas</h1>
         <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
     </header>
     
-    <section id="container-tarefas">
+    <section id="container-nova-tarefa">
         <input id="texto-tarefa">
-        <button id="criar-tarefa">Adicionar Tarefa</button>
-        <ol id="lista-tarefas">
-        </ol>
+        <button id="criar-tarefa">+</button>
     </section>
+
+    <ol id="lista-tarefas">
+    </ol>
     
-    <section id="container-buttons">
+    <footer id="container-buttons">
         <button id="apaga-tudo">Apagar tudo</button>
         <button id="remover-finalizados">Apagar finalizados</button>
-        <button id="salvar-tarefas">Salvar Tarefas</button>
-    </section>
+        <button id="salvar-tarefas">Salvar</button>
+    </footer>
     
 
     <script src="script.js"></script>

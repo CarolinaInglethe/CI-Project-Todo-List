@@ -1,0 +1,80 @@
+body {
+  background: linear-gradient(68.15deg, #e0e5cd 15.62%, #84a985ce 100%);
+  font-size: 100%;
+}
+
+
+header {
+  color: rgb(54, 53, 53);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  text-align: center;
+  left: 0;
+  width: 100%;
+  font-size: large;
+}
+
+
+#container-nova-tarefa {
+  border-top: 1px solid rgba(0, 0, 0, 0.377);
+  padding-top: 100px;
+  text-align: center;
+}
+
+#container-nova-tarefa input {
+  border-radius: 4px;
+  padding: 4px;
+  font-size: large;
+}
+
+#container-nova-tarefa button {
+  border-radius: 4px;
+  font-size: large;
+}
+
+#lista-tarefas {
+  padding: 60px;
+  margin: 50px 25%;
+}
+
+#lista-tarefas li {
+  padding: 4px;
+  font-size: large;
+  margin: 5px;
+  text-align: center;
+}
+
+#container-buttons {
+  text-align: center;
+  padding: 20px;
+}
+
+#apaga-tudo {
+  background-color: #d63d3d75;
+  border: 1px solid rgba(0, 0, 0, 0.335);
+  border-radius: 5px;
+  font-size: large;
+  padding: 5px;
+}
+
+#remover-finalizados {
+  background-color: #dbab5178;
+  border: 1px solid rgba(0, 0, 0, 0.411);
+  border-radius: 5px;
+  font-size: large;
+  padding: 5px;
+}
+
+#salvar-tarefas {
+  background-color: #a4e66a9f;
+  border: 1px solid rgba(0, 0, 0, 0.37);
+  border-radius: 5px;
+  font-size: large;
+  padding: 5px;
+}
+
+
+.completed {
+  text-decoration: line-through;
+}
