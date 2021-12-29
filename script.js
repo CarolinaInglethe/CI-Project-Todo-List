@@ -16,6 +16,8 @@ window.onload = function() {
     const itemLista = document.createElement('li');
     itemLista.className = 'item-tarefa';
     itemLista.innerText = caixaDeInput.value;
+    itemLista.addEventListener('click', alteraCorItemLista);
+    itemLista.addEventListener('dblclick', tarefaCompletada);
     listaTarefas.appendChild(itemLista);
     caixaDeInput.value = '';
   }
@@ -23,6 +25,8 @@ window.onload = function() {
 
   // requesito 7- alterar cor de fundo do item da lista tarefas
   // Requesito 8 - alterar apenas uma cor por vez
+  // requesito 9- Ao clicar 2x no item marca com risco de completado
+  // e retira o risco completado
 
   const itemTarefasOl = document.querySelector('ol')
   const  listaLis = itemTarefasOl.children; 
@@ -34,18 +38,21 @@ window.onload = function() {
     }
     event.target.style.backgroundColor = 'rgb(128,128,128)';
   }
-  itemTarefasOl.addEventListener('click', alteraCorItemLista);
-
-  // requesito 9- Ao clicar 2x no item marca com risco de completado
-  // e retira o risco completado
-
+  
   function tarefaCompletada(event) {
     if (event.target.className === 'item-tarefa completed') {
       return event.target.className = 'item-tarefa';
     }
     event.target.className = 'item-tarefa completed';
   }
-  itemTarefasOl.addEventListener('dblclick', tarefaCompletada);
+
+  // colocar eventos também nas li guardadas no localstorage
+  if (listaLis.length > 0) {
+    for(let index = 0; index < listaLis.length; index += 1) {
+      listaLis[index].addEventListener('click', alteraCorItemLista);
+      listaLis[index].addEventListener('dblclick', tarefaCompletada)
+    }
+  }
 
   // requesito 10- botao apaga tudo quando clicar apaga todos itens da lista
   // botao criado direto no html
